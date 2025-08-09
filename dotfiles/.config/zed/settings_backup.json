@@ -1,0 +1,136 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+  "show_edit_predictions": true,
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4"
+    },
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4"
+    },
+    "version": "2"
+  },
+  "project_panel": {
+    "hide_gitignore": false
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "enabled_in_text_threads": true
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "ui_font_size": 20,
+  "ui_font_family": "Adwaita Sans",
+  "ui_font_weight": 500,
+  "soft_wrap": "editor_width",
+  "buffer_font_size": 18,
+  "buffer_font_family": "FiraCode Nerd Font Propo",
+  "buffer_font_weight": 500,
+  "buffer_line_height": "standard",
+  "agent_font_size": 18,
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "always",
+    "use_smartcase_find": true
+  },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "terminal": {
+    "line_height": "standard",
+    "detect_venv": {
+      "on": {
+        // Default directories to search for virtual environments, relative
+        // to the current working directory. We recommend overriding this
+        // in your project's settings, rather than globally.
+        "directories": [
+          ".venv",
+          "venv"
+        ],
+        // Can also be `csh`, `fish`, and `nushell`
+        "activate_script": "default"
+      }
+    }
+  },
+  "lsp": {
+    "ty": {
+      "binary": {
+        "path": "/home/wyb/.local/bin/ty",
+        "arguments": [
+          "server"
+        ]
+      }
+    },
+    "texlab": {
+      "settings": {
+        "texlab": {
+          "build": {
+            "onSave": false
+          }
+        }
+      }
+    },
+    "basedpyright": {
+      "settings": {
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        },
+        "basedpyright.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "standard",
+          "inlayHints": {
+            "callArgumentNames": false
+          }
+        }
+      }
+    },
+    "pyright": {
+      "settings": {
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
+      }
+    },
+    "ruff": {
+      "initialization_options": {}
+    },
+    "java": {
+      "java.errors.incompleteClasspath.severity": "ignore"
+    },
+    "nim": {
+      "binary": {
+        "path": "/home/wyb/.nimble/bin/nimlangserver"
+      }
+    }
+  },
+  "languages": {
+    "Python": {
+      "language_servers": [
+        "basedpyright",
+        "ruff"
+      ],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    },
+  },
+  "formatter": "language_server",
+  "format_on_save": "on"
+}

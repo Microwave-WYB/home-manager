@@ -1,0 +1,8 @@
+theme = "Adwaita Dark"
+window-padding-x = 8
+window-padding-y = 8
+window-height = 30
+window-width = 100
+
+font-size = 13
+confirm-close-surface = false
