@@ -4,6 +4,7 @@
   home.stateVersion = "25.05";
   imports = [
     ./modules/base.nix
+    ./modules/fonts.nix
     ./modules/ghostty.nix
 
     ./modules/lang-go.nix
