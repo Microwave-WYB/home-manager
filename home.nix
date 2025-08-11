@@ -14,6 +14,7 @@
     ./modules/lang-nix.nix
     ./modules/lang-python.nix
     ./modules/lang-rust.nix
+    ./modules/lang-zig.nix
 
     ./modules/texlive.nix
   ];
