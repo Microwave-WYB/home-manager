@@ -10,6 +10,7 @@
     hexyl
     watchexec
     jq
+    unzip
   ];
 
   # Let Home Manager install and manage itself
