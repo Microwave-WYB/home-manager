@@ -25,7 +25,6 @@ in
   home.packages = with pkgs; [
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
-    nerd-fonts.go-mono
     noto-fonts
     noto-fonts-emoji
     noto-fonts-cjk-sans
