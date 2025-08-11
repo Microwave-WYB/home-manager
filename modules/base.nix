@@ -1,9 +1,6 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    # Shells
-    zsh
-    nushell
     # Essential CLI tools
     neovim
     zoxide
@@ -11,6 +8,7 @@
     watchexec
     jq
     unzip
+    yazi
   ];
 
   # Let Home Manager install and manage itself
@@ -25,12 +23,6 @@
         rev = "v3.14.0";
         sha256 = "sha256-cBMGmFrveBes30aCSLMBO8WrtoPZeMNjcEQoQEzBNvM=";
       };
-      recursive = true;
-    };
-
-    ".zoxide.nu".source = ../dotfiles/nushell/.zoxide.nu;
-    ".config/nushell" = {
-      source = ../dotfiles/nushell/.config/nushell;
       recursive = true;
     };
 

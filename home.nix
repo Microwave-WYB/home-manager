@@ -6,6 +6,7 @@
     ./modules/base.nix
     ./modules/fonts.nix
     ./modules/ghostty.nix
+    ./modules/nushell.nix
 
     ./modules/lang-go.nix
     ./modules/lang-java.nix
