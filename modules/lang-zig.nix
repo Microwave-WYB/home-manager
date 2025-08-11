@@ -1,8 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    cargo
-    rustc
-    rustfmt
+    zig
+    zls
   ];
 }

@@ -8,6 +8,8 @@
     neovim
     zoxide
     hexyl
+    watchexec
+    jq
   ];
 
   # Let Home Manager install and manage itself
