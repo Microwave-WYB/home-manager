@@ -14,11 +14,11 @@
 
   home.file = {
     ".local/share/fonts" = {
-      source = ../dotfiles/.local/share/fonts;
+      source = ../dotfiles/fonts/.local/share/fonts;
       recursive = true;
     };
     ".config/fontconfig" = {
-      source = ../dotfiles/.config/fontconfig;
+      source = ../dotfiles/fonts/.config/fontconfig;
       recursive = true;
     };
   };

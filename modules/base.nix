@@ -16,7 +16,7 @@
   programs.home-manager.enable = true;
 
   home.file = {
-    ".zshrc".source = ../dotfiles/.zshrc;
+    ".zshrc".source = ../dotfiles/zsh/.zshrc;
     ".local/share/zinit/zinit.git" = {
       source = pkgs.fetchFromGitHub {
         owner = "zdharma-continuum";
@@ -27,19 +27,19 @@
       recursive = true;
     };
 
-    ".zoxide.nu".source = ../dotfiles/.zoxide.nu;
+    ".zoxide.nu".source = ../dotfiles/nushell/.zoxide.nu;
     ".config/nushell" = {
-      source = ../dotfiles/.config/nushell;
+      source = ../dotfiles/nushell/.config/nushell;
       recursive = true;
     };
 
     ".config/nvim" = {
-      source = ../dotfiles/.config/nvim;
+      source = ../dotfiles/nvim/.config/nvim;
       recursive = true;
     };
 
     ".config/zed" = {
-      source = ../dotfiles/.config/zed;
+      source = ../dotfiles/zed/.config/zed;
       recursive = true;
     };
   };

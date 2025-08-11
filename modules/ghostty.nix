@@ -1,7 +1,7 @@
 {
   home.file = {
     ".config/ghostty" = {
-      source = ../dotfiles/.config/ghostty;
+      source = ../dotfiles/ghostty/.config/ghostty;
       recursive = true;
     };
   };
