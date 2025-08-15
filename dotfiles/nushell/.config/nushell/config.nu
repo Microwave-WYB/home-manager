@@ -41,6 +41,7 @@ let env_file = ($env.HOME | path join '.env')
 if ($env_file | path exists) {
     my-env $env_file
 }
+$env.config.edit_mode = 'vi'
 
 alias zed = zeditor
 

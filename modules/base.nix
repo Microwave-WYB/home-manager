@@ -9,13 +9,14 @@
     jq
     unzip
     yazi
+    just
+    stow
   ];
 
   # Let Home Manager install and manage itself
   programs.home-manager.enable = true;
 
   home.file = {
-    ".zshrc".source = ../dotfiles/zsh/.zshrc;
     ".local/share/zinit/zinit.git" = {
       source = pkgs.fetchFromGitHub {
         owner = "zdharma-continuum";
@@ -23,16 +24,6 @@
         rev = "v3.14.0";
         sha256 = "sha256-cBMGmFrveBes30aCSLMBO8WrtoPZeMNjcEQoQEzBNvM=";
       };
-      recursive = true;
-    };
-
-    ".config/nvim" = {
-      source = ../dotfiles/nvim/.config/nvim;
-      recursive = true;
-    };
-
-    ".config/zed" = {
-      source = ../dotfiles/zed/.config/zed;
       recursive = true;
     };
   };

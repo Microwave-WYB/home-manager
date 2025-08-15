@@ -5,12 +5,12 @@
   imports = [
     ./modules/base.nix
     ./modules/fonts.nix
-    ./modules/ghostty.nix
-    ./modules/nushell.nix
+    ./modules/reverse-eng.nix
 
     ./modules/lang-go.nix
     ./modules/lang-java.nix
     ./modules/lang-js.nix
+    ./modules/lang-kotlin.nix
     ./modules/lang-nim.nix
     ./modules/lang-nix.nix
     ./modules/lang-python.nix
