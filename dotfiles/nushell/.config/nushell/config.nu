@@ -45,4 +45,8 @@ $env.config.edit_mode = 'vi'
 
 alias zed = zeditor
 
+def row-to-json [stmt: string] {
+  "SELECT row_to_json(t) FROM (" + $stmt + ") t"
+}
+
 source ~/.zoxide.nu
