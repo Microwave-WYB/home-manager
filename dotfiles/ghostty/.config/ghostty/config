@@ -5,5 +5,5 @@ window-height = 30
 window-width = 100
 
 font-size = 13
-font-family = "Google Sans Code"
+font-family = "JetBrainsMono Nerd Font"
 confirm-close-surface = false

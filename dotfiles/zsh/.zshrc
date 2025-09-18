@@ -101,3 +101,5 @@ y() {
     fi
     rm -f -- "$tmp"
 }
+
+[ -f "/home/wyb/.ghcup/env" ] && . "/home/wyb/.ghcup/env" # ghcup-env

@@ -25,6 +25,7 @@ in
   home.packages = with pkgs; [
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
+    nerd-fonts.go-mono
     noto-fonts
     noto-fonts-emoji
     noto-fonts-cjk-sans
@@ -32,6 +33,8 @@ in
     inter
     adwaita-fonts
     google-sans-code
+    liberation_ttf
+    helvetica-neue-lt-std
   ];
 
   home.file = {
@@ -49,4 +52,6 @@ in
     serif = [ "Noto Serif CJK SC" ];
     emoji = [ "Noto Color Emoji" ];
   };
+
+  nixpkgs.config.allowUnfree = true;
 }

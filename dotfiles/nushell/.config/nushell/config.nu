@@ -44,9 +44,11 @@ if ($env_file | path exists) {
 $env.config.edit_mode = 'vi'
 
 alias zed = zeditor
+alias va = exec uv run nu
 
 def row-to-json [stmt: string] {
-  "SELECT row_to_json(t) FROM (" + $stmt + ") t"
+  "SELECT row_to_json(t) FROM (\n" + $stmt + "\n) t"
 }
+
 
 source ~/.zoxide.nu
